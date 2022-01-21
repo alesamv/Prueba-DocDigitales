@@ -1,0 +1,326 @@
+body {
+  font-family: "Ubuntu", "sans-serif";
+  margin: 0;
+  /* margin: 3rem 15rem; */
+}
+
+header,
+.cards,
+.benefits,
+.step-background,
+.modal,
+footer {
+  margin: 3rem 15rem;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  /* width: 20vw; */
+}
+
+.slogan,
+.last-pharagraph {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+header div p {
+  margin: 0.2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  margin: 0.4rem;
+  padding: 3rem 2rem 3rem 2rem;
+  border: 0.1px solid #f7f7f7;
+  box-shadow: 6px 3px 10px -2px #c2c2c2;
+  border-radius: 0.5rem;
+  width: 25%;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  background-color: #516cc5;
+  border: 0.1px solid #516cc5;
+}
+
+.card:hover i,
+.card:hover p {
+  color: white;
+}
+
+i {
+  color: #3152c3;
+  margin-bottom: 1rem;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+iframe {
+  width: 40vw;
+  height: 20vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.listBenefits {
+  margin-left: 2rem;
+}
+
+.listBenefits h3 {
+  margin-left: 4rem;
+}
+
+.listBenefits i {
+  margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listBenefits li {
+  font-weight: bold;
+  color: #646464;
+}
+
+.listBenefits p {
+  margin-left: 1.5rem;
+  margin-top: 0.4rem;
+}
+
+.steps {
+  background-color: #3152c3;
+}
+
+.step-background {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.step {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.step i,
+.step p {
+  color: white;
+}
+
+.step h3 {
+  color: #83cb2b;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.see-packages,
+.appointment {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  width: 50%;
+  padding: 10px 30px;
+  margin: 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.see-packages:active,
+.appointment:active {
+  transform: translateY(-0.5rem);
+}
+
+.see-packages {
+  background-color: #83cb2b;
+}
+
+.appointment {
+  background-color: #2d4ec4;
+}
+
+.show-modal .modal {
+  background-color: white;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid lightgray;
+  /* border-top: 10px solid #2d4ec4; */
+  width: 80%;
+}
+
+.show-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 100px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cards-packages {
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-package {
+  background-color: #d9eaf3;
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  /* width: 25%; */
+}
+
+.card-package h3 {
+  color: #387ab2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.card-package hr {
+  background-color: #9bc4e9;
+  height: 0.01rem;
+  border: 0;
+}
+
+.card-package a {
+  cursor: pointer;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.price-select {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.light-text {
+  color: #646464;
+  margin-bottom: 2rem;
+}
+
+.selection {
+  background-color: #387ab2;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  width: 50%;
+  padding: 10px 30px;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+/* Media querys for tablet */
+@media (max-width: 1200px) {
+  header,
+  .cards,
+  .benefits,
+  .step-background,
+  .modal,
+  footer {
+    margin: 2rem;
+  }
+
+  .cards,
+  .benefits,
+  .steps {
+    flex-wrap: wrap;
+  }
+
+  .video {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  iframe {
+    width: 50vh;
+    height: 25vh;
+  }
+
+  .cards-packages {
+    display: block;
+  }
+
+  .card-package {
+    height: 5%;
+  }
+
+  .show-modal .modal {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Media querys for phone */
+@media (max-width: 575px) {
+  header,
+  .cards,
+  .benefits,
+  .step-background,
+  .modal,
+  footer {
+    margin: 1rem;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .listBenefits {
+    margin-right: 2rem;
+  }
+
+  .step-background {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .buttons a {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .show-modal,
+  .modal {
+    margin-bottom: 10rem;
+  }
+}
