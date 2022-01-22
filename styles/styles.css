@@ -1,7 +1,6 @@
 body {
   font-family: "Ubuntu", "sans-serif";
   margin: 0;
-  /* margin: 3rem 15rem; */
 }
 
 header,
@@ -16,7 +15,6 @@ footer {
 .logo {
   display: block;
   margin: auto;
-  /* width: 20vw; */
 }
 
 .slogan,
@@ -196,7 +194,6 @@ ul {
   padding: 1.5rem;
   text-align: center;
   border-radius: 1rem;
-  /* width: 25%; */
 }
 
 .card-package h3 {
@@ -241,7 +238,7 @@ ul {
   text-decoration: none;
 }
 
-/* Media querys for tablet */
+/* Media querys */
 @media (max-width: 1200px) {
   header,
   .cards,
@@ -297,6 +294,10 @@ ul {
 
   .logo {
     width: 60%;
+  }
+
+  iframe {
+    width: 100%;
   }
 
   .listBenefits {
