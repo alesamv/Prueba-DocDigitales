@@ -267,6 +267,7 @@ ul {
 
   .cards-packages {
     display: block;
+    padding-bottom: 10rem;
   }
 
   .card-package {
