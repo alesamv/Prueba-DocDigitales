@@ -267,7 +267,7 @@ ul {
 
   .cards-packages {
     display: block;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
   }
 
   .card-package {
@@ -278,7 +278,7 @@ ul {
     /* height: 100%; */
     align-items: center;
     justify-content: center;
-    margin-bottom: 20rem;
+    margin-bottom: 3rem;
   }
 }
 
