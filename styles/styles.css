@@ -180,7 +180,8 @@ ul {
   justify-content: center;
 }
 
-.close {
+.close,
+.close-conta {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -238,7 +239,7 @@ ul {
   text-decoration: none;
 }
 
-/* Media querys */
+/* Media querys to be responsive*/
 @media (max-width: 1200px) {
   header,
   .cards,
@@ -270,19 +271,14 @@ ul {
     padding-bottom: 3rem;
   }
 
-  .card-package {
-    height: 5%;
-  }
-
   .show-modal .modal {
-    /* height: 100%; */
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
   }
 }
 
-/* Media querys for phone */
+/* Media querys for small devices */
 @media (max-width: 575px) {
   header,
   .cards,
